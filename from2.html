@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Registraction</title>
+</head>
+<style>
+    body{
+        background: pink;
+    }
+    form{
+        width: 400px;
+        padding:20px;
+        margin: auto;
+    }
+    label{
+         color:red;
+    }
+    input[type="text"]{
+        width: 98%;
+        border-color: blue;
+    }
+    input[type="submit"]{
+        color: red;
+    }
+    input[type="reset"]{
+        color: red;
+    }
+</style>
+
+<body>
+    <form>
+        <table bgcolor=yellow border=2 bordercolor=green cellspacing=5>
+            <tr><td>
+        <label>FIRST NAME:  </label>
+        </td>
+        <td>
+            <input type="text" name="fname" id="fname" placeholder="Enter the first name" required />
+         </td>
+         </tr>
+         <tr>
+         <td>
+            <label>LAST NAME:  </label>
+        </td>
+        <td>
+            <input type="text" name="lname" id="lname" placeholder="Enter the last name" required />
+        </td>
+         </tr>
+         <tr>
+        <td>
+            <label>EMAIL:  </label>
+        </td>
+        <td>
+            <input type="text" name="ename" id="ename" placeholder="Enter the email-id" required />
+        </td>
+        </tr>
+        <tr>
+        <td>
+                <label>Country:</label>
+        </td>
+        <td>
+            <select >
+                <option disabled selected>select</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Nepal</option>
+                <option>USA</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <label>Gender:</label>
+        </td>
+        <td>
+            <input type="radio" name="Gender" id="m" value="Male"/>Male
+            <input type="radio" name="Gender" id="f" value="Female"/>female
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <label>Language known:</label>
+        </td>
+        <td>
+            <input type="checkbox" name="language" id="language" value="Hindi" required/>Hindi
+            <input type="checkbox" name="language" id="language" value="English" required/>English
+            <input type="checkbox" name="language" id="language" value="Other" required/>Other
+        </td>
+        </tr>
+        <tr align="center">
+        <td>
+        <label>Description:</label>
+        </td>
+        <td>
+             <textarea name="message" rows="5" cols="30" placeholder="writw Query"></textarea>
+        </td>
+            </tr>
+            <tr align="center">
+            <td>
+            <input type="submit" value="submit" >
+            </td>
+            <td>
+            <input type="reset" value="reset" onclick="confirm('your from reset confirm')">
+            </td>
+        </tr>
+            </table>
+        </from>     
+</body>
+</html>
